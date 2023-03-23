@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="tabloidProject.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="master_body" runat="server">
+    <form id="Form1" runat="server">
+        <asp:Panel ID="masterPage" runat="server" CssClass="page">
+            <asp:Panel runat="server" ID="pnlMenu">
+                <div id="header" class="header">
+                    <div class="title">
+                        <h1>
+                            <%=System.Web.Configuration.WebConfigurationManager.AppSettings["Titre"]%>
+                        </h1>
+                    </div>
+                    <div class="loginDisplay">
+                        Bienvenue <span class="bold"><%=Session["nomUtil"] %></span>
+                    </div>
+                    <div class="clear hideSkiplink">
+                        <asp:PlaceHolder ID="MenuHolder" runat="server" ViewStateMode="Disabled" EnableViewState="false"></asp:PlaceHolder>
+                    </div>
+                </div>
+            </asp:Panel>
+            <asp:Panel ID="pnlMasterMain" runat="server" CssClass="main">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </asp:Panel>
+            <div class="clear">
+            </div>
+        </asp:Panel>
+        <asp:Panel ID="pnlMasterFooter" runat="server" CssClass="footer">
+        </asp:Panel>
+    </form>
+
+</body>
+</html>

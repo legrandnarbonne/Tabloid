@@ -1,0 +1,436 @@
+﻿/*18/08/2015 build 5683.25840 WhiteRed*/
+
+body {
+    background: #ccc;
+    margin: 0;
+    padding: 0;
+}
+
+#bodyPopup {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+body, input, select, textarea {
+    color: #959494;
+    font: 12px/18px Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #f93733;
+    text-decoration: underline;
+}
+
+    a:hover {
+        color: #f93733;
+        text-decoration: none !important;
+    }
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: none;
+    border: solid 1px #f54844;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    color: inherit;
+    outline: 0;
+    padding: 7px;
+    text-decoration: none;
+}
+
+select {
+    font-size: 10pt;
+    padding: 3px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #f54844;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    line-height: 1em;
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    -ms-opacity: 0.5;
+    opacity: 0.5;
+    position: relative;
+    top: 3px;
+}
+
+:-moz-placeholder {
+    color: inherit;
+    -ms-opacity: 0.5;
+    opacity: 0.5;
+}
+
+::-moz-placeholder {
+    color: inherit;
+    -ms-opacity: 0.5;
+    opacity: 0.5;
+}
+
+:-ms-input-placeholder {
+    color: inherit;
+    -ms-opacity: 0.5;
+    opacity: 0.5;
+}
+
+/* Button */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="file"],
+.button {
+    -moz-appearance: none;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-appearance: none;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-appearance: none;
+    -o-transition: all 0.35s ease-in-out;
+    -webkit-appearance: none;
+    -webkit-transition: all 0.35s ease-in-out;
+    appearance: none;
+    background: none;
+    border: 1px solid;
+    border-color: #f19694;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    color: #500;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    margin: 5px;
+    padding: 0.5em 0.5em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.35s ease-in-out;
+}
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    input[type="button"]:hover,
+    .button:hover {
+        background: #f19694;
+        border-color: #777;
+        color: Black;
+    }
+
+    input[type="submit"].alt,
+    input[type="reset"].alt,
+    input[type="button"].alt,
+    .button.alt {
+        border-color: inherit;
+        color: inherit;
+    }
+
+        input[type="submit"].alt:hover,
+        input[type="reset"].alt:hover,
+        input[type="button"].alt:hover,
+        .button.alt:hover {
+            background: Black;
+            border-color: #777;
+            color: #f19694;
+        }
+
+    input[type="submit"].fit,
+    input[type="reset"].fit,
+    input[type="button"].fit,
+    .button.fit {
+        width: 100%;
+    }
+
+    input[type="submit"].small,
+    input[type="reset"].small,
+    input[type="button"].small,
+    .button.small {
+        font-size: 0.8em;
+    }
+
+.title {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 100;
+    padding: 0.50em 0.5em 0em 0.30em; /*site2*/
+    float: left;/*site 2*/
+}
+.loginDisplay {
+    color: #777777;
+    display: block;
+    font-size: 1.3em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: right; /*site2*/
+    padding: 10px; /*site2*/
+}
+
+h1 {
+    color: #212121 !important;
+}
+
+.bodyDetail {
+    background: #b6b7bc;
+    color: #696969;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    font-size: .80em;
+    margin: 0;
+    padding: 0;
+}
+
+.bodyDetailListMode {
+    color: #696969;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    font-size: .80em;
+    margin: 0;
+    padding: 0;
+}
+
+.main {/*site2*/
+    background-color: #fff;
+    padding: 0px 12px;
+    margin: 5px 8px 8px 8px;
+}
+
+.mainPopup { /*site 2*/
+    background-color: #fff;
+}
+
+.pnlMaj {
+    color: #777;
+    font-style: italic;
+}
+
+.page {
+    background-color: #ffffff;
+    color: #212121;
+    font: 13px Arial, Helvetica, sans-serif;
+    margin: 20px auto 0 auto;
+    padding: 0;
+    width: 960px;
+}
+
+.pagePopup { /*site 2*/
+    background-color: #ffffff;
+    color: #212121;
+    font: 13px Arial, Helvetica, sans-serif;
+    margin: 0 auto 0 auto;
+    padding: 0;
+}
+
+.pageListMode {
+    background-color: #fff;
+    width: 100%;
+}
+
+.header {
+    background: #ccc url(/images/whiteRed/bandeau.png) no-repeat;
+    padding: 0em;
+}
+
+.footer {
+    color: #4e5766;
+    line-height: normal;
+    margin: 0 auto;
+    padding: 8px 0 0 0;
+    text-align: center;
+}
+
+.footerListMode {
+    color: #4e5766;
+    line-height: normal;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.onglet {
+    color: #383636;
+    font-family: Arial;
+    font-size: 23px;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.olMap {
+    background-color: #ffffff;
+}
+
+.clear { /*site2*/
+    clear: both;
+}
+
+.bold { /*site2*/
+    font-weight: bold;
+}
+
+.importantField {
+    font-weight: bold;
+    color: red !important;
+}
+
+/* TAB MENU
+----------------------------------------------------------*/
+
+div.hideSkiplink {
+    background: none repeat scroll 0 0 #000000;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    border-bottom: solid 1px;
+    width: 100%;
+}
+
+div.menu {
+    font-weight: bold;
+    padding: 0 0 0 4px;
+}
+
+    div.menu ul {
+        background: none repeat scroll 0 0 #000000;
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        div.menu ul li a, div.menu ul li a:visited {
+            color: #fff;
+            display: inline-block;
+            font-size: 0.9em;
+            font-weight: 300;
+            letter-spacing: 2px;
+            line-height: 3em;
+            margin-left: 0.5em;
+            padding: 0 0.2em;
+            text-decoration: none;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+            div.menu ul li a:hover {
+                color: red;
+                -ms-text-shadow: 2px 2px 4px #000;
+                text-shadow: 2px 2px 4px #000;
+            }
+
+            div.menu ul li a:active {
+                color: white;
+            }
+
+div.menu .level1 {
+    background: none !important;
+    font-weight: BOLD !important;
+}
+
+.gauge {
+    float: left;
+    background-color: #f1c6c5;
+
+    padding 1px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.gaugeValueHolder {
+    float: left;
+    position: relative;
+    top: 0px;
+
+    padding: 7px;
+    border: solid 1px #f19694;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* GRIDVIEW */
+
+.Grid {
+    border: none;
+    border-collapse: collapse;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 1.0em;
+    margin-bottom: 1em;
+    -ms-text-shadow: none;
+    text-shadow: none;
+    width: 100%;
+}
+
+    .Grid td {
+        background: #fff;
+        border: none;
+        color: #000000;
+    }
+
+    .Grid th {
+        background: #303030;
+        color: #fff;
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+
+    .Grid .alt td {
+        background: #f19694;
+    }
+
+    .Grid .h_alt td {
+        background: #f2c6c5;
+    }
+
+    .Grid .h_ td {
+        background: #f2c6c5;
+    }
+
+    .Grid .pgr table {
+        border: none;
+        margin: 5px 0;
+    }
+
+    .Grid .pgr td {
+        background: #303030;
+        border-left: solid 1px #666;
+        border-width: 0;
+        color: #500;
+        font-weight: bold;
+        line-height: 12px;
+        padding: 0 6px;
+    }
+
+    .Grid .pgr a {
+        color: #f93733;
+        text-decoration: none;
+    }
+
+        .Grid .pgr a:hover {
+            color: #000;
+            text-decoration: none;
+        }
+
+.ascendingCellStyle, .descendingCellStyle {
+    background: #c1ccb3 !important;
+}
+
+.ascendingHeaderStyle {
+    background: url(/images/asc.png) no-repeat !important;
+    background-color: #f19694 !important;
+    padding: 0 6px 0 15px;
+}
+
+.descendingHeaderStyle {
+    background: url(/images/desc.png) no-repeat !important;
+    background-color: #f19694 !important;
+    padding: 0 6px 0 15px;
+}

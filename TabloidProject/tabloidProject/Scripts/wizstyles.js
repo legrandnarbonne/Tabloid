@@ -1,0 +1,1 @@
+var wizStyles={"Camion":{"image":{"$type":"Tabloid.Classes.Objects.OlObjects.OlStyle+OlIcon, Tabloid","anchor":[0.5,0.5],"size":[64,64],"src":"/images/garbage-truck (1).png","scale":1.0}}};

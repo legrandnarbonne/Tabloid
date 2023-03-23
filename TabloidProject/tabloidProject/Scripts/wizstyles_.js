@@ -1,0 +1,1 @@
+var wizStyles={"logement":{"image":{"$type":"Tabloid.Classes.Objects.OlObjects.OlStyle+OlIcon, Tabloid","anchor":[0.5,0.5],"size":[32,32],"src":"/images/l2.png","scale":1.0}}};
